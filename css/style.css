@@ -28,6 +28,12 @@
   --basic-copyright:231F20;
   --basic-list: #CACACA;
   --basic-dackground: #ABABAB;
+
+  --special: #604E43;
+  --special-color: #503E33;
+  --special-color-sky: #669EC0;
+  --special-color-blsky: #5496BD;
+  --special-color-pale: #EBEBEB;
 }
 
 /*Global*/
@@ -56,21 +62,38 @@ img {
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
-  color: var(--basic-text-bl);
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: bold;
   background-color: transparent;
+}
+
+.main-header-logo {
+   float: center;
 }
 
 .site-navigation {
   list-style: none;
-  color: var(--basic-text-bl);
-  text-decoration: underline;
+  text-align: center;
+  display: inline-block;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a{
+  text-decoration: none;
+  color: var(--basic-color-bl);
+  }
+
+.site-navigation a:hover {
   color: var(--basic-color-sky);
 }
 
+.site-navigation a:active {
+  color: var(--basic-color-bl);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-br);
+}
 
 /* Features */
 
@@ -79,8 +102,16 @@ img {
   background-color: var(--basic-color-pale);
   width: 1200px;
   height: 256px;
+  display: inline-block;
 }
 
+.box {
+  background-image: url("../img/Rectangle.svg");
+  width: 400px;
+  height: 256px;
+  color: var(--basic-color);
+  text-align: center;
+}
 
 /*Recommendation*/
 
@@ -109,37 +140,65 @@ h3 {
   line-height: 21px;
 }
 
- /*Section*/
-
-.box {
-  background-image: url("../img/Rectangle.svg");
-  width: 400px;
-  height: 256px;
-  color: var(--basic-color);
-  text-align: center;
-}
-
 .search {
-
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
 }
 
+.text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-text-pale);
+}
 /*Form*/
 
 .appointment-form {
    font-size: 21px;
   line-height: 26px;
   background-color: transparent;
+  text-align: center;
+  width: 568px;
+  height: 395px;
 }
+
+.sector {
+  background-color: var(--basic-br);
+  text-align: center;
+  color: var(--basic-color);
+  width: 568px;
+  height: 86px;
+}
+
+.sector:hover {
+  background-color: var(--special);
+}
+
+.sector:focus {
+  background-color: var(--special-color);
+}
+
 
 .appointment-item {
   font-size: 14px;
   line-height: 26px;
 }
 
-.appointment-item input {
+input[type="text"] {
   background-color: var(--basic-color-form);
   border: none;
 }
+
+input[type="text"]:hover {
+  background-color: var(--special-color-pale);
+}
+
+input[type="text"]:focus {
+  background-color: var(--basic-color);
+}
+
 
 .button {
   background-color: var(--basic-color-sky);
@@ -149,6 +208,15 @@ h3 {
   height: 58px;
   text-align: center;
 }
+
+.button:hover {
+  background-color: var(--special-color-sky);
+}
+
+.button:focus {
+  background-color: var(--special-color-blsky);
+}
+
 
 /*Footer*/
 
@@ -175,4 +243,45 @@ h3 {
   list-style: none;
 }
 
+.fb {
+  background-color: var(--basic-color-sky);
+  width: 46px;
+  height: 48px;
+}
+
+.tw {
+  background-color: var(--basic-color-sky);
+  width: 46px;
+  height: 48px;
+}
+
+.yt {
+  background-color: var(--basic-color-sky);
+  width: 46px;
+  height: 48px;
+}
+
+.fb:hover {
+  background-color: var(--special-color-sky);
+}
+
+.fb:focus {
+  background-color: var(--special-color-blsky);
+}
+
+.tw:hover {
+  background-color: var(--special-color-sky);
+}
+
+.tw:focus {
+  background-color: var(--special-color-blsky);
+}
+
+.yt:hover {
+  background-color: var(--special-color-sky);
+}
+
+.yt:focus {
+  background-color: var(--special-color-blsky);
+}
 
