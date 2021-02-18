@@ -261,27 +261,13 @@ input[type="text"]:focus {
   height: 48px;
 }
 
-.fb:hover {
+.social-button a:hover {
   background-color: var(--special-color-sky);
 }
 
-.fb:focus {
+.social-button a:focus {
   background-color: var(--special-color-blsky);
 }
 
-.tw:hover {
-  background-color: var(--special-color-sky);
-}
 
-.tw:focus {
-  background-color: var(--special-color-blsky);
-}
-
-.yt:hover {
-  background-color: var(--special-color-sky);
-}
-
-.yt:focus {
-  background-color: var(--special-color-blsky);
-}
 
