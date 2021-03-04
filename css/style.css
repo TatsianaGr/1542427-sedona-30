@@ -34,6 +34,7 @@
   --special-color-sky: #669EC0;
   --special-color-blsky: #5496BD;
   --special-color-pale: #EBEBEB;
+  --special-disabled: #6A6A6A;
 }
 
 /*Global*/
@@ -254,6 +255,149 @@ input[type="text"]:focus {
 }
 
 
+
+/*Catalog*/
+
+
+
+/*Fieldset*/
+.filter {
+  color: var(--basic-color);
+  background-color: var(--basic-color-pale);
+  background-image: url("../img/background.jpg");
+  position: absolute;
+  width: 1200px;
+  height: 217px;
+}
+}
+
+.legend {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.filter-option {
+  list-style: none;
+}
+
+.filter-checkbox {
+  color: var(--basic-color);
+}
+
+.filter-checkbox:hover {
+  color: var(--basic-color);
+}
+
+.filter-checkbox:disabled {
+  color: var(--special-disabled);
+}
+
+.filter-checkbox-tip {
+  color: var(--basic-color);
+}
+
+.filter-checkbox-tip:hover {
+  color: var(--basic-color);
+}
+
+.filter-checkbox-tip:disabled {
+  color: var(--special-disabled);
+}
+
+/*Article*/
+
+.found {
+  color: var(--basic-text-bl)
+}
+
+.breadcrumbs {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
+  border: 1px;
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover{
+  color: var(--basic-color-sky);
+  border: 1px;
+}
+
+.breadcrumbs a:focus {
+  text-decoration: underline;
+  color: var(--basic-black);
+}
+
+.breadcrumbs a:active {
+  text-decoration: underline;
+  color: var(--basic-color-sky);
+}
+
+.breadcrumbs img {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.breadcrumbs img:hover{
+  color: var(--basic-color-sky);
+}
+
+.breadcrumbs img:focus {
+  color: var(--basic-black);
+}
+
+.breadcrumbs img:active {
+  color: var(--basic-color-sky);
+}
+
+.lodging {
+  list-style: none;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.caption {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.button {
+  width: 110px;
+  height: 27px;
+  color: var(--basic-color);
+  background-color: var(--basic-color-sky);
+}
+
+.button:hover{
+  background-color: var(--special-color-sky);
+}
+
+.button:focus {
+  background-color: var(--special-color-blsky);
+  opacity: 0.3;
+}
+
+.button-reservation {
+  width: 142px;
+  height: 27px;
+  color: var(--basic-color);
+  background-color: var(--basic-br);
+}
+
+.button-reservation:hover{
+  background-color: var(--special);
+}
+
+.button-reservation:focus {
+  background-color: var(--special-color);
+  opacity: 0.3;
+}
+
+
 /*Footer*/
 
 .main-footer {
@@ -304,6 +448,7 @@ input[type="text"]:focus {
 .social-button a:focus {
   background-color: var(--special-color-blsky);
 }
+
 
 
 
