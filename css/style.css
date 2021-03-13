@@ -349,11 +349,22 @@ input[type="text"]:focus {
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 400px 600px 1fr;
 }
 
-.page-catalog .filters{
+.page-catalog .filters {
   grid-column: 1 / -1;
+  grid-gap: 20px;
+}
+
+.page-catalog .breadcrumbs {
+  grid-column: 1 / -1;
+  grid-gap: 20px;
+}
+
+.page-catalog .found {
+  grid-column: 1 / -1;
+  grid-gap: 20px;
 }
 
 
@@ -362,7 +373,6 @@ input[type="text"]:focus {
   color: var(--basic-color);
   background-color: var(--basic-color-pale);
   background-image: url("../img/background.jpg");
-  position: absolute;
   width: 1200px;
   height: 217px;
   outline: 5px solid rgba(0, 255, 0, 0.7);
@@ -510,7 +520,6 @@ input[type="text"]:focus {
   color: var(--basic-text-bl);
   background-color: var(--basic-color);
   opacity: 0.9;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .main-footter .footter-container{
@@ -533,8 +542,7 @@ input[type="text"]:focus {
 
 .footer-social {
   text-align: center;
-   grid-column: 4 / 6;
-   
+  grid-column: 4 / 6;
 }
 
 .footer-social ul {
